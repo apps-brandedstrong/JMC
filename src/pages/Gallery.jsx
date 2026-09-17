@@ -14,6 +14,16 @@ const Gallery = () => {
   ];
 
   const projects = [
+    { id: 29, image: '/assets/images/gallery/interior-remodel-01.webp', title: 'Interior Remodeling', category: 'remodeling', description: 'Bright open living space with new flooring and finishes' },
+    { id: 30, image: '/assets/images/gallery/interior-remodel-02.webp', title: 'Bedroom Renovation', category: 'interior', description: 'Updated bedroom with modern flooring and mirrored storage' },
+    { id: 31, image: '/assets/images/gallery/interior-remodel-03.webp', title: 'Sunroom Renovation', category: 'interior', description: 'Light-filled room with refreshed flooring and finishes' },
+    { id: 32, image: '/assets/images/gallery/interior-remodel-04.webp', title: 'Open-Concept Remodel', category: 'remodeling', description: 'Renovated kitchen and living area with custom details' },
+    { id: 33, image: '/assets/images/gallery/interior-remodel-05.webp', title: 'Kitchen Remodeling', category: 'remodeling', description: 'Updated kitchen layout with a spacious stone countertop' },
+    { id: 34, image: '/assets/images/gallery/interior-remodel-06.webp', title: 'Interior Flooring', category: 'interior', description: 'Continuous light wood flooring throughout the living spaces' },
+    { id: 35, image: '/assets/images/gallery/interior-remodel-07.webp', title: 'Dining Area Remodel', category: 'remodeling', description: 'Open dining area with architectural ceiling details' },
+    { id: 36, image: '/assets/images/gallery/interior-remodel-08.webp', title: 'Bedroom Flooring', category: 'interior', description: 'Freshly finished bedroom with durable modern flooring' },
+    { id: 37, image: '/assets/images/gallery/interior-remodel-09.webp', title: 'Whole-Home Renovation', category: 'remodeling', description: 'Coordinated flooring and finish upgrades across the home' },
+    { id: 38, image: '/assets/images/gallery/interior-remodel-10.webp', title: 'Flooring Restoration', category: 'interior', description: 'Floor preparation and repair during the remodeling process' },
     { id: 1, image: '/assets/images/projects/PPP.jpeg', title: 'Construction Project', category: 'residential', description: 'Quality construction work' },
     { id: 2, image: '/assets/images/projects/WhatsApp Image 2025-12-.jpeg', title: 'Remodeling Project', category: 'remodeling', description: 'Professional remodeling services' },
     { id: 3, image: '/assets/images/projects/WhatsApp Image 2025-12-12 .jpeg', title: 'Home Renovation', category: 'residential', description: 'Complete home transformation' },
@@ -109,6 +119,8 @@ const Gallery = () => {
                   <img 
                     src={project.image} 
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -212,4 +224,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
